@@ -1,0 +1,16 @@
+{
+    "name": "tmajne/beginner",
+    "type": "project",
+    "authors": [
+        {
+            "name": "TT",
+            "email": "ttomczyk@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Beginer\\": "src/"
+        }
+    }
+}
