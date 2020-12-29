@@ -51,10 +51,8 @@
  * Kiedy używać klasy abstrakcyjnej (patrz wyżej)
  */
 
-require __DIR__ . '/../../vendor/autoload.php';
-
-use Beginer\One\Contractor;
-use Beginer\One\FullTimeEmployee;
+require_once __DIR__ . '/../../src/one/Contractor.php';
+require_once __DIR__ . '/../../src/one/FullTimeEmployee.php';
 
 $contractorEmployee = new Contractor('Robert', 'IT', 100);
 $fullTimeEmployee = new FullTimeEmployee('John', 'QA', 10000);

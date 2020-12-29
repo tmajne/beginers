@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Beginer\One;
+require_once 'EmployeeInterface.php';
 
 abstract class Employee implements EmployeeInterface
 {
