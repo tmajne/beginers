@@ -28,12 +28,12 @@ interface PersonalEmail
 class UserExampleOne implements PersonalName, PersonalNick, PersonalEmail
 {
     public function name(): string {
-        return 'user name';
+        return 'user name ';
     }
 
     public function nick(): string
     {
-        return 'user nick';
+        return 'user nick ';
     }
 
     public function email(): string
@@ -42,10 +42,10 @@ class UserExampleOne implements PersonalName, PersonalNick, PersonalEmail
     }
 }
 
-$userOne = new UserExampleOne();
-echo $userOne->name();
-echo $userOne->nick();
-echo $userOne->email();
+//$userOne = new UserExampleOne();
+//echo $userOne->name();
+//echo $userOne->nick();
+//echo $userOne->email();
 
 
 /**
@@ -53,26 +53,28 @@ echo $userOne->email();
  */
 
 interface Personal extends PersonalEmail, PersonalNick, PersonalName
-{}
+{
+    //public function address(): string;
+}
 
 class UserExampleTwo implements Personal
 {
     public function name(): string {
-        return 'user name';
+        return 'user name ';
     }
 
     public function nick(): string
     {
-        return 'user nick';
+        return 'user nick ';
     }
 
     public function email(): string
     {
-        return 'useremail@example.com';
+        return 'useremail@example.com ';
     }
 }
 
 $userTwo = new UserExampleTwo();
-//echo $userTwo->name();
-//echo $userTwo->nick();
-//echo $userTwo->email();
+echo $userTwo->name();
+echo $userTwo->nick();
+echo $userTwo->email();

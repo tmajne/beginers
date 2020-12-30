@@ -30,7 +30,7 @@
  * Drugą trochę "nie oczywistą" dla osób bardziej początkujących jest sytuacja gdy tworzymy jakiś serwis/bibliotekę i dopuszczamy możliwość stworzenie jej zupełnie nowej implementacji, na przykład w innej technologi.
  * Dobrym przykładem jest np serwis do zapisu danych, możemy dane zapisywać w pliku, bazie danych, pamięci w jakimś zewnętrznym serwisie z którym komunikujemy się na przykład przez http. Każdy taki serwis musi spełniać ten sam "kontrakt" jednak nie muszą one dziedziczyć po wspólnym rodzicu (pamiętamy, kompozycja ponad dziedziczenie)
  * Np. mamy interfejs:
- * Storage
+ * Storage // public function saveUserData(array $data): void
  * i jego implementacje
  * FileStorage
  * MemoryStorage

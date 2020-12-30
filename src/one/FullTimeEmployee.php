@@ -6,10 +6,10 @@ class FullTimeEmployee extends Employee
 {
     private float $salary;
 
-    public function __construct(string $name, string $position, float $sallary)
+    public function __construct(string $name, string $position, float $salary)
     {
         parent::__construct($name, $position);
-        $this->salary = $sallary;
+        $this->salary = $salary;
     }
 
     public function salary(): float

@@ -24,4 +24,9 @@ abstract class Employee implements EmployeeInterface
     {
         return $this->position;
     }
+
+    //private function nick(): string
+    //{
+    //    return 'nick';
+    //}
 }
