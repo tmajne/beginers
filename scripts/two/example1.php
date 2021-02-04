@@ -61,8 +61,9 @@ $object = new MyClass();
 //$object->printProperties();
 
 $childObject = new MyChild();
-var_dump($childObject->baz);
-//$childObject->printChildProperties();
+//var_dump($childObject->foo);
+//var_dump($childObject->baz);
+$childObject->printChildProperties();
 
 /**
  * Widzimy, że dostęp z zewnątrz obiektu jest tylko do właściwości publicznej.

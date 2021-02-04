@@ -1,9 +1,13 @@
 <?php
 
-require __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/../../src/two/PublicHouse.php';
+require_once __DIR__ . '/../../src/two/PrivateHouse.php';
 
-$publicHouse = new PublicHouse();
-$publicHouse->closed = false;
+//$publicHouse = new PublicHouse();
+//var_dump($publicHouse->closed);
+
+//$publicHouse->closed = false;
+//var_dump($publicHouse->closed);
 
 /**
  * Wszystko jest publiczne.
@@ -22,9 +26,11 @@ $publicHouse->closed = false;
  */
 
 $privateHouse = new PrivateHouse();
+var_dump($privateHouse->isOpen());
 $privateHouse->open('123');
-//$privateHouse->open('123qwe');
-
+var_dump($privateHouse->isOpen());
+$privateHouse->open('123qwe');
+var_dump($privateHouse->isOpen());
 
 /**
  * Teraz widzimy, że jedyny sposób otwarcia naszego mieszkania jest poprzez metodę "open"
