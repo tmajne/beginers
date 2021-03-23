@@ -10,15 +10,16 @@ $i = 10;
 // = operator przypisania
 // $i - zmienna
 
-var_dump($i);
+//var_dump($i);
 
-/*
+
 // przypisanie przez kopiowanie
 $j = $i;
 
-var_dump($j);
+//var_dump($j);
 
-$j++;
+$j = $j + 1;
+
+$i = 8;
 
 var_dump($i, $j);
-*/

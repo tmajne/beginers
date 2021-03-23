@@ -8,5 +8,6 @@
  * they are not actual memory addresses, and so on.
  *
  * The closest analogy is with Unix filenames and files - variable names are directory entries,
- * while variable content is the file itself. References can be likened to hardlinking in Unix filesystem
+ * while variable content is the file itself. References can be likened to hardlinking in Unix 
+ * filesystem
  */

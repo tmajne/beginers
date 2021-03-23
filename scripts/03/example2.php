@@ -22,31 +22,30 @@ class SomeClass
     }
 }
 
-//$foo = new SomeClass('foo', 10);
+$foo = new SomeClass('foo', 10);
 
-print_r($foo);
-
-/*
+//print_r($foo);
 
 $bar = $foo;
 
-print_r($bar);
+//print_r($bar);
 
 $bar->setCount(22);
 
-print_r($foo);
-print_r($bar);
+//print_r($foo);
+//print_r($bar);
 
-$zet = & $foo;
 
-print_r($foo);
-print_r($bar);
-print_r($zet);
-
-$foo = new SomeClass('sss', 4444);
+$zet = & $bar;
 
 print_r($foo);
 print_r($bar);
 print_r($zet);
 
-*/
+$bar = new SomeClass('sss', 4444);
+print_r('========');
+print_r($foo);
+print_r($bar);
+print_r($zet);
+
+
